@@ -19,12 +19,12 @@ export const Content = styled.div`
     flex-direction:column;
     justify-content:center;
     place-content:center;
-
-    width:100%;
+    padding-top:80px;
+    width:90%;
     max-width:700px;    
 
     form{
-        margin: 80px 0;
+        margin: 60px 0;
         width:340px;
         text-align:center;
 
@@ -36,22 +36,22 @@ export const Content = styled.div`
       
 
         a{
-            color:#F4EDE8;
+            color:#595454;
             display:block;
             margin-top:24px;
             text-decoration:none;
             transition: color 0.2s;
 
             &:hover{
-                    color: ${shade(0.2, '#f4ede8')};
+                    color: ${shade(0.2, '#595454')};
             }
 
         }
     }
     > a {
-            color:#FF9000;
+            color:black;
             display:block;
-            margin-top:24px;
+            margin-top:-10px;
             text-decoration:none;
             transition: color 0.2s;
 
@@ -63,7 +63,7 @@ export const Content = styled.div`
 
             }
             &:hover{
-                color:${shade(0.2,'#ff9000')};
+                color:${shade(0.2,'black')};
 
             }  
     }

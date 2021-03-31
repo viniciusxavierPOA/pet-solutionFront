@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 
-     background: #232129;
+     background: #fff;
     border-radius:10px;
-    border:2px solid #232129;
+    border:3px solid #5CE1E6;
     padding:16px;
     width:100%;
     display:flex;
     align-items:center;
-    color:#666360;
+    color:#595454;
 
 & + div {
         margin-top:8px;
@@ -18,7 +18,7 @@ export const Container = styled.div`
 input{
     flex:1;
     background:transparent;
-    color:#F4EDE8;
+    color:#595454;
     border:0;
 
     &::placeholder{
