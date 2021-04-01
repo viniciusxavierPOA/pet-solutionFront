@@ -21,7 +21,7 @@ export const Content = styled.div`
     place-content:center;
     padding-top:80px;
     width:90%;
-    max-width:700px;    
+    max-width:700px;   
 
     form{
         margin: 60px 0;
@@ -54,7 +54,8 @@ export const Content = styled.div`
             margin-top:-10px;
             text-decoration:none;
             transition: color 0.2s;
-
+            padding-top:80px;
+            place-content:center;
             display:flex;
             align-items:center; 
 
