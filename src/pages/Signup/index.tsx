@@ -28,6 +28,8 @@ const SignUp: React.FC = () => {
             .email('Digite um E-mail válido'),
            password:Yup.string()
            .min(6, 'Senha no Mínimo 6 dígitos'),
+           passwordConfirmation: Yup.string()
+           .oneOf([Yup.ref('password'), null], 'Senhas não Conferem'),
 
         });
         await schema.validate(data,{
@@ -52,6 +54,7 @@ const SignUp: React.FC = () => {
         <Input name="fone" icon={FiPhone} placeholder="fone"/>
         <Input name="email" icon={FiMail} placeholder="E-mail"/>
         <Input name="password" icon={FiLock} type="password"  placeholder="Senha" />
+        <Input name="passwordConfirmation" icon={FiLock} type="password" placeholder="confirmar Senha"/>
 
         <Button type="submit">Cadastrar</Button>
 
