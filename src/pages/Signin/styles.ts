@@ -20,7 +20,7 @@ export const Content = styled.div`
     justify-content:center;
     place-content:center;
     padding-top:80px;
-    width:90%;
+    width:100%;
     max-width:700px;   
 
     form{
