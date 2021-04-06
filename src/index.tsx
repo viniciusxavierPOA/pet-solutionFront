@@ -1,11 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React, {createContext, useCallback} from 'react';
+import GlobalStyle from './styles/global';
+import SignIn from './pages/Signin';
+import SignUp from './pages/Signup';
+import { AuthProvider } from './context/AuthContext';
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+
+const App: React.FC = () => (
+    <>
+    <AuthProvider>
+    <SignIn/>
+    </AuthProvider>
+    <GlobalStyle/>
+    </>
 );
+
+export default App;
